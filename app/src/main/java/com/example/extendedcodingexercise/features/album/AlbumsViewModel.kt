@@ -9,10 +9,8 @@ import com.example.extendedcodingexercise.data.repository.AlbumsRepository
 import com.example.extendedcodingexercise.domain.Album
 import com.example.extendedcodingexercise.util.Event
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import retrofit2.HttpException
-import java.lang.Exception
 import javax.inject.Inject
 
 @HiltViewModel

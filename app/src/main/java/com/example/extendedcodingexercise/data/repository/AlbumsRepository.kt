@@ -43,6 +43,8 @@ class AlbumsRepositoryImpl @Inject constructor(
                 val typiUsers = retrofitService.fetchUsersFromNetwork()
                 if (typiAlbums.isNotEmpty()) {
                     insertAlbumsIntoDB(typiAlbums.asDomainModel())
+                }
+                if (typiUsers.isNotEmpty()){
                     insertUsersIntoDB(typiUsers.asDomainModel())
                 }
             } catch (ex: HttpException) {
