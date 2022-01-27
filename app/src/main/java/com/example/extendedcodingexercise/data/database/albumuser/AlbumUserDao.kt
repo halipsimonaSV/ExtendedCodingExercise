@@ -9,7 +9,6 @@ import androidx.room.Transaction
 @Dao
 interface AlbumUserDao {
     @Transaction
-    @RewriteQueriesToDropUnusedColumns
-    @Query("SELECT * FROM users INNER JOIN albums ON albums.user_id=users.user_id")
+    @Query("SELECT albums.user_id,albums.id,albums.title,users.name FROM users INNER JOIN albums ON albums.user_id=users.user_id")
     fun getAlbumUsers(): LiveData<List<DBAlbumUser>>
 }
