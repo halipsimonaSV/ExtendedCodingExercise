@@ -1,10 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="primaryColor">#7050A6</color>
+    <color name="primaryLightColor">#C2AEE4</color>
+    <color name="primaryDarkColor">#4D3775</color>
+    <color name="secondaryColor">#7C1E8C</color>
+    <color name="secondaryLightColor">#4D5CAC</color>
+    <color name="secondaryDarkColor">#293053</color>
+    <color name="primaryTextColor">#000000</color>
+    <color name="secondaryTextColor">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="background">#ffffff</color>
+    <color name="borderColor">#80F1FF</color>
+
+    <color name="purple1">#8454D5</color>
+    <color name="purple2">#AB83EF</color>
+    <color name="purple3">#DC5080</color>
+    <color name="purple4">#6C7BD5</color>
+    <color name="purple5">#8E59E6</color>
+    <color name="purple6">#7A84BD</color>
+    <color name="purple7">#EF8BED</color>
+    <color name="purple8">#B77AE3</color>
+    <color name="purple9">#E91ED5</color>
+    <color name="purple10">#C86CEA</color>
+    <color name="lightGrey">#efefef</color>
+
+    <integer-array name="avatarcolors">
+        <item>@color/purple1</item>
+        <item>@color/purple2</item>
+        <item>@color/purple3</item>
+        <item>@color/purple4</item>
+        <item>@color/purple5</item>
+        <item>@color/purple6</item>
+        <item>@color/purple7</item>
+        <item>@color/purple8</item>
+        <item>@color/purple9</item>
+        <item>@color/purple10</item>
+    </integer-array>
 </resources>

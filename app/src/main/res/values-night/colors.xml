@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#CAB2F4</color>
+    <color name="primaryLightColor">#39068F</color>
+    <color name="primaryDarkColor">#332253</color>
+    <color name="secondaryColor">#D233ED</color>
+    <color name="secondaryLightColor">#7F208F</color>
+    <color name="secondaryDarkColor">#5D1868</color>
+    <color name="primaryTextColor">#FFFFFF</color>
+    <color name="secondaryTextColor">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="background">#232323</color>
+
+    <color name="purple1">#5408D5</color>
+    <color name="purple2">#35166A</color>
+    <color name="purple3">#830631</color>
+    <color name="purple4">#2B3991</color>
+    <color name="purple5">#523483</color>
+    <color name="purple6">#4C5275</color>
+    <color name="purple7">#834582</color>
+    <color name="purple8">#705881</color>
+    <color name="purple9">#AA1C9C</color>
+    <color name="purple10">#7C3D93</color>
+    <color name="lightGrey">#efefef</color>
+
+    <integer-array name="avatarcolors">
+        <item>@color/purple1</item>
+        <item>@color/purple2</item>
+        <item>@color/purple3</item>
+        <item>@color/purple4</item>
+        <item>@color/purple5</item>
+        <item>@color/purple6</item>
+        <item>@color/purple7</item>
+        <item>@color/purple8</item>
+        <item>@color/purple9</item>
+        <item>@color/purple10</item>
+    </integer-array>
+</resources>

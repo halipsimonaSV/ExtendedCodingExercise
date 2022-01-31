@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">ExtendedCodingExercise</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="loading_albums_in_progress">Loading albums in progress</string>
+    <string name="no_network">No network</string>
+    <string name="cannot_load_albums">Cannot load albums.</string>
+    <string name="api_problem">API problem</string>
+    <string name="user_avatar">User avatar</string>
 </resources>
