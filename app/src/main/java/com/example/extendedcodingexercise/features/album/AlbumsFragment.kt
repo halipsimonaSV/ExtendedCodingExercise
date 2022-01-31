@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import com.example.extendedcodingexercise.databinding.FragmentAlbumsBinding
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -28,7 +29,9 @@ class AlbumsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val adapter = AlbumsAdapter(requireContext())
+        val adapter = AlbumsAdapter(requireContext()){userId->
+            findNavController().navigate(AlbumsFragmentDirections.actionAlbumsFragmentToUserDialog(userId))
+        }
         binding.rvAlbums.adapter = adapter
 
         binding.swlRefreshAlbums.setOnRefreshListener {

@@ -1,17 +1,20 @@
 package com.example.extendedcodingexercise.domain
 
 import com.example.extendedcodingexercise.data.database.user.DBUser
-import com.example.extendedcodingexercise.data.network.user.address.TypiAddress
-import com.example.extendedcodingexercise.data.network.user.company.TypiCompany
 
 data class User(
     val userId: Int,
     val name: String,
-    val typiCompany: TypiCompany,
-    val typiAddress: TypiAddress,
+    val companyName: String,
     val email: String,
     val phone: String,
     val website: String,
+    val street: String,
+    val suite: String,
+    val city: String,
+    val zipcode: String,
+    val lat: String,
+    val lng: String,
 )
 
 fun List<User>.asDBModel(): List<DBUser> {
@@ -19,16 +22,31 @@ fun List<User>.asDBModel(): List<DBUser> {
         DBUser(
             it.userId,
             it.name,
-            it.typiCompany.companyName,
+            it.companyName,
             it.email,
             it.phone,
             it.website,
-            it.typiAddress.street,
-            it.typiAddress.suite,
-            it.typiAddress.city,
-            it.typiAddress.zipcode,
-            it.typiAddress.typiGeo.lat,
-            it.typiAddress.typiGeo.lng
+            it.street,
+            it.suite,
+            it.city,
+            it.zipcode,
+            it.lat,
+            it.lng
         )
     }
 }
+
+fun User.asDBModel(): DBUser = DBUser(
+    userId,
+    name,
+    companyName,
+    email,
+    phone,
+    website,
+    street,
+    suite,
+    city,
+    zipcode,
+    lat,
+    lng
+)

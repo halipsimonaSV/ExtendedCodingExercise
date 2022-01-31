@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#80000000">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_dialog_user"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="@color/background"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:cardPreventCornerOverlap="true"
+        app:contentPadding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/ud_tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                tools:text="Usser name"
+                style="@style/TextAppearance.CustomTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/iv_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:src="@drawable/ic_address_book_svgrepo_com"
+                app:layout_constraintEnd_toStartOf="@id/ud_tv_company"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ud_tv_name">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/ud_tv_company"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                style="@style/TextAppearance.CustomItem"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/iv_company"
+                app:layout_constraintBottom_toTopOf="@+id/iv_email"
+                app:layout_constraintTop_toBottomOf="@id/ud_tv_name">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/iv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_ip_address_svgrepo_com"
+                android:layout_margin="8dp"
+                app:layout_constraintEnd_toStartOf="@id/ud_tv_email"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_company">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/ud_tv_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                style="@style/TextAppearance.CustomItem"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/iv_address"
+                app:layout_constraintStart_toEndOf="@id/iv_email"
+                app:layout_constraintTop_toBottomOf="@id/iv_company">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/iv_address"
+                android:layout_width="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_address_book_svgrepo_com"
+                app:layout_constraintEnd_toStartOf="@id/ud_tv_address"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_email">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/ud_tv_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                style="@style/TextAppearance.CustomItem"
+                app:layout_constraintBottom_toTopOf="@+id/iv_phone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/iv_address"
+                app:layout_constraintTop_toBottomOf="@id/iv_email">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/iv_phone"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_address_book_svgrepo_com"
+                android:layout_margin="8dp"
+                app:layout_constraintEnd_toStartOf="@id/ud_user_phone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_address">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/ud_user_phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                style="@style/TextAppearance.CustomItem"
+                app:layout_constraintBottom_toTopOf="@+id/iv_website"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/iv_phone"
+                app:layout_constraintTop_toBottomOf="@id/iv_address">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/iv_website"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_address_book_svgrepo_com"
+                android:layout_margin="8dp"
+                app:layout_constraintEnd_toStartOf="@id/ud_tv_website"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_phone">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/ud_tv_website"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                style="@style/TextAppearance.CustomItem"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/iv_website"
+                app:layout_constraintTop_toBottomOf="@id/iv_phone">
+
+            </TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
