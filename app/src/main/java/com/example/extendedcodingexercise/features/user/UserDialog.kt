@@ -47,7 +47,8 @@ class UserDialog : BottomSheetDialogFragment() {
             binding.udTvEmail.text = it.email
             binding.udTvWebsite.text = it.website
             binding.udUserPhone.text = it.phone
-
+            lat = it.lat
+            lng = it.lng
         })
 
         binding.ivEmail.setOnClickListener {
@@ -107,9 +108,6 @@ class UserDialog : BottomSheetDialogFragment() {
                     Toast.LENGTH_LONG
                 ).show()
             }
-        }
-        binding.udTvEmail.setOnClickListener {
-
         }
 
     }

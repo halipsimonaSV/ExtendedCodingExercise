@@ -37,8 +37,8 @@ class AlbumsAdapter @Inject constructor(@ApplicationContext private val context:
             val avatarColor = androidColors[Random.nextInt(androidColors.size)]
             val drawable: TextDrawable = TextDrawable.Builder()
                 .setColor(avatarColor)
+                .setBold()
                 .setShape(TextDrawable.SHAPE_RECT)
-                .setBorder(10)
                 .setText(item.userInitials).build()
             binding.ivUserInitials.setImageDrawable(drawable)
             binding.ivUserInitials.setOnClickListener {
